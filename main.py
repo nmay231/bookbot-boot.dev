@@ -1,2 +1,5 @@
+from collections import Counter
+
 with open("books/frankenstein.txt") as f:
-    print(f"{len(f.read().split())} words in the book: Frankenstein")
+    counts = Counter(f.read().lower())
+    print(counts)
