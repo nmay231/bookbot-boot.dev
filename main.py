@@ -1,2 +1,2 @@
 with open("books/frankenstein.txt") as f:
-    print(f.read())
+    print(f"{len(f.read().split())} words in the book: Frankenstein")
